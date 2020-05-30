@@ -1,0 +1,24 @@
+{
+    "name": "emptynick/black-theme",
+    "description": "An all-black theme for Voyager 2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoph Schweppe",
+            "email": "info@cschweppe.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Emptynick\\BlackTheme\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emptynick\\BlackTheme\\BlackThemeServiceProvider"
+            ]
+        }
+    }
+}
