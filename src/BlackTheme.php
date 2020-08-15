@@ -15,17 +15,7 @@ class BlackTheme implements ThemePlugin
     public $website = 'https://github.com/emptynick/black-theme';
     public $version = '1.0.0';
 
-    public function getInstructionsView(): ?View
-    {
-        return null;
-    }
-
-    public function registerProtectedRoutes()
-    {
-        //
-    }
-
-    public function registerPublicRoutes()
+    public function providePublicRoutes(): void
     {
         Route::get('black-theme.css', function () {
             $path = realpath(dirname(__DIR__, 1).'/resources/dist/black.css');
@@ -38,20 +28,8 @@ class BlackTheme implements ThemePlugin
         })->name('black-theme');
     }
 
-    public function getSettingsView(): ?View
+    public function provideCSS(): string
     {
-        return null;
-    }
-
-    public function getCssRoutes(): array
-    {
-        return [
-            route('black-theme')
-        ];
-    }
-
-    public function getJsRoutes(): array
-    {
-        return [];
+        return route('voyager.black-theme');
     }
 }

@@ -1,19 +1,121 @@
 
 :root {
     /* Accent */
-    --accent-bg-color-dark: black;
-    --accent-border-color-dark: black;
-    --accent-text-color-dark: white;
-    --accent-hover-color-dark: black;
-    --accent-focus-color-dark: black;
-    --accent-active-color-dark: black;
+    --accent-bg-color-dark: theme('colors.black');
+    --accent-border-color-dark: theme('colors.gray.700');
+    --accent-text-color-dark: theme('colors.black');
+    --accent-hover-color-dark: theme('colors.black');
+    --accent-focus-color-dark: theme('colors.black');
+    --accent-active-color-dark: theme('colors.black');
 
     /* Bg */
-    --bg-color-dark: black;
+    --bg-color-dark: theme('colors.black');
 
     /* Card */
-    --card-bg-color-dark: black;
-    --card-border-color-dark: black;
-    --card-text-color-dark: white;
-    --card-title-color-dark: white;
+    --card-bg-color-dark: theme('colors.black');
+    --card-border-color-dark: theme('colors.gray.700');
+    --card-text-color-dark: theme('colors.gray.300');
+    --card-title-color-dark: theme('colors.gray.300');
+
+    /* Code */
+    --code-bg-color-dark: theme('colors.black');
+    --code-text-color-dark: theme('colors.gray.200');
+
+    /* Description */
+    --description-text-color-dark: theme('colors.gray.200');
+
+    /* Dropdown */
+    --dropdown-bg-color-dark: theme('colors.black');
+    --dropdown-border-color-dark: theme('colors.gray.700');
+    --dropdown-divider-border-color-dark: theme('colors.gray.700');
+    --dropdown-link-color-dark: theme('colors.gray.600');
+    --dropdown-link-hover-color-dark: theme('colors.gray.800');
+
+    /* Input */
+    --input-bg-color-dark: theme('colors.black');
+    --input-border-color-dark: theme('colors.gray.700');
+    --input-text-color-dark: theme('colors.gray.200');
+
+    /* Label */
+    --label-text-color-dark: theme('colors.gray.200');
+
+    /* Link */
+    --link-color-dark: theme('colors.gray.600');
+
+    /* Loader */
+    --loader-bg-color-dark: theme('colors.black');
+    --loader-text-color-dark: theme('colors.gray.200');
+
+    /* Media */
+    --media-bg-color-dark: theme('colors.black');
+    --media-border-color-dark: theme('colors.gray.700');
+    --media-breadcrumbs-bg-color-dark: theme('colors.gray.800');
+    --media-breadcrumbs-border-color-dark: theme('colors.gray.700');
+    --media-item-bg-color-dark: theme('colors.gray.800');
+    --media-item-border-color-dark: theme('colors.gray.700');
+    --media-item-hover-bg-color-dark: theme('colors.gray.700');
+    --media-item-selected-bg-color-dark: theme('colors.gray.750');
+    --media-item-selected-border-color-dark: theme('colors.gray.700');
+    --media-sidebar-bg-color-dark: theme('colors.gray.800');
+    --media-sidebar-border-color-dark: theme('colors.gray.700');
+
+    /* Notification */
+    --notification-bg-color-dark: theme('colors.black');
+    --notification-message-color-dark: theme('colors.gray.500');
+    --notification-title-color-dark: theme('colors.gray.100');
+
+    /* Scrollbar */
+    --scrollbar-bg-color-dark: theme('colors.gray.800');
+    --scrollbar-handle-color-dark: theme('colors.gray.600');
+
+    /* Select */
+    --select-bg-color-dark: theme('colors.gray.800');
+    --select-bg-focused-color-dark: theme('colors.gray.750');
+    --select-bg-selected-color-dark: theme('colors.gray.700');
+    --select-text-color-dark: theme('colors.gray.100');
+    --select-text-focused-color-dark: theme('colors.gray.100');
+    --select-text-selected-color-dark: theme('colors.gray.100');
+
+    /* Sidebar */
+    --sidebar-bg-color-dark: theme('colors.black');
+    --sidebar-border-color-dark: theme('colors.gray.700');
+    --sidebar-icon-color-dark: theme('colors.gray.200');
+    --sidebar-item-active-color-dark: theme('colors.gray.900');
+    --sidebar-item-hover-color-dark: theme('colors.gray.700');
+    --sidebar-item-icon-active-color-dark: theme('colors.gray.200');
+    --sidebar-item-icon-color-dark: theme('colors.gray.300');
+    --sidebar-item-text-active-color-dark: theme('colors.gray.200');
+    --sidebar-item-text-color-dark: theme('colors.gray.300');
+    --sidebar-sub-item-color-dark: theme('colors.gray.850');
+    --sidebar-title-color-dark: theme('colors.gray.200');
+
+    /* Table */
+    --table-border-color-dark: theme('colors.gray.600');
+    --table-head-bg-color-dark: transparent;
+    --table-head-border-color-dark: theme('colors.gray.600');
+    --table-head-text-color-dark: theme('colors.gray.400');
+    --table-row-border-color-dark: theme('colors.gray.600');
+    --table-row-even-bg-color-dark: transparent;
+    --table-row-even-bg-color-hover-dark: theme('colors.gray.900');
+    --table-row-even-text-color-dark: theme('colors.gray.400');
+    --table-row-even-text-color-hover-dark: theme('colors.gray.400');
+    --table-row-odd-bg-color-dark: theme('colors.gray.750');
+    --table-row-odd-bg-color-hover-dark: theme('colors.gray.900');
+    --table-row-odd-text-color-dark: theme('colors.gray.400');
+    --table-row-odd-text-color-hover-dark: theme('colors.gray.400');
+
+    /* Tabs */
+    --tabs-border-color-active-dark: theme('colors.gray.500');
+    --tabs-border-color-hover-dark: theme('colors.gray.500');
+    --tabs-text-color-active-dark: theme('colors.gray.600');
+    --tabs-text-color-hover-dark: theme('colors.gray.500');
+
+    /* Text */
+    --text-color-dark: theme('colors.gray.300');
+
+    /* Tooltip */
+    --tooltip-arrow-border-color: theme('colors.gray.900');
+    --tooltip-bg-color-dark: theme('colors.black');
+    --tooltip-border-color-dark: theme('colors.black');
+    --tooltip-text-color-dark: theme('colors.white');
 }
