@@ -15,21 +15,8 @@ class BlackTheme implements ThemePlugin
     public $website = 'https://github.com/emptynick/black-theme';
     public $version = '1.0.0';
 
-    public function providePublicRoutes(): void
-    {
-        Route::get('black-theme.css', function () {
-            $path = realpath(dirname(__DIR__, 1).'/resources/dist/black.css');
-            $response = response(File::get($path), 200, ['Content-Type' => 'text/css']);
-            $response->setSharedMaxAge(31536000);
-            $response->setMaxAge(31536000);
-            $response->setExpires(new \DateTime('+1 year'));
-
-            return $response;
-        })->name('black-theme');
-    }
-
     public function provideCSS(): string
     {
-        return route('voyager.black-theme');
+        return file_get_contents(realpath(dirname(__DIR__, 1).'/resources/dist/black.css'));
     }
 }
